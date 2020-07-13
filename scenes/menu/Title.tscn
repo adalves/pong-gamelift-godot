@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://fonts/Font.tres" type="DynamicFont" id=1]
+[ext_resource path="res://scenes/menu/TitleAnim.gd" type="Script" id=2]
+
+[node name="Title" type="Label"]
+margin_left = 180.0
+margin_right = 296.0
+margin_bottom = 209.0
+size_flags_horizontal = 4
+custom_fonts/font = ExtResource( 1 )
+text = "p"
+align = 1
+valign = 1
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}

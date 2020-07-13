@@ -1,0 +1,70 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://fonts/FontOptions.tres" type="DynamicFont" id=1]
+[ext_resource path="res://scenes/menu/TitleAnim.gd" type="Script" id=2]
+
+[node name="SearchingLabel" type="CenterContainer"]
+anchor_left = 0.5
+anchor_top = 0.25
+anchor_right = 0.5
+anchor_bottom = 0.25
+margin_left = -840.0
+margin_right = 840.0
+margin_bottom = 105.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+margin_left = 365.0
+margin_right = 1314.0
+margin_bottom = 105.0
+size_flags_horizontal = 4
+custom_fonts/font = ExtResource( 1 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "Searching for game"
+
+[node name="dot" type="Label" parent="Label"]
+anchor_left = 0.5
+anchor_top = 2.0
+anchor_right = 0.5
+anchor_bottom = 2.0
+margin_left = -11.5
+margin_top = -105.0
+margin_right = 11.5
+custom_fonts/font = ExtResource( 1 )
+text = "."
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="dot2" type="Label" parent="Label"]
+anchor_left = 0.475
+anchor_top = 2.0
+anchor_right = 0.5
+anchor_bottom = 2.0
+margin_left = -11.5
+margin_top = -105.0
+margin_right = 11.5
+custom_fonts/font = ExtResource( 1 )
+text = "."
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="dot3" type="Label" parent="Label"]
+anchor_left = 0.525
+anchor_top = 2.0
+anchor_right = 0.58
+anchor_bottom = 2.0
+margin_left = -11.5
+margin_top = -105.0
+margin_right = 11.5
+custom_fonts/font = ExtResource( 1 )
+text = "."
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}

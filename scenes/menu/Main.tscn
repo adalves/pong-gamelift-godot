@@ -1,0 +1,19 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://code/SearchForMatch.gd" type="Script" id=1]
+[ext_resource path="res://scenes/menu/SearchingLabel.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scenes/menu/SimpleBG.tscn" type="PackedScene" id=3]
+[ext_resource path="res://code/Client.cs" type="Script" id=4]
+
+[node name="GameManager" type="Node"]
+pause_mode = 2
+script = ExtResource( 1 )
+
+[node name="Client" type="Node" parent="."]
+script = ExtResource( 4 )
+
+[node name="SearchingScreen" type="Node" parent="."]
+
+[node name="ColorRect" parent="SearchingScreen" instance=ExtResource( 3 )]
+
+[node name="SearchingLabel" parent="SearchingScreen" instance=ExtResource( 2 )]

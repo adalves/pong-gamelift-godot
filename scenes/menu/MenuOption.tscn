@@ -1,0 +1,32 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://fonts/FontOptions.tres" type="DynamicFont" id=1]
+[ext_resource path="res://code/MenuOption.gd" type="Script" id=2]
+
+[node name="MenuOption" type="CenterContainer"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -840.0
+margin_top = -52.5
+margin_right = 840.0
+margin_bottom = 52.5
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Option" type="Button" parent="."]
+margin_left = 715.0
+margin_right = 965.0
+margin_bottom = 111.0
+focus_mode = 0
+size_flags_horizontal = 4
+custom_fonts/font = ExtResource( 1 )
+custom_colors/font_color = Color( 0.352941, 0.352941, 0.352941, 1 )
+custom_colors/font_color_hover = Color( 1, 1, 1, 1 )
+enabled_focus_mode = 0
+text = "Menu"
+flat = true
+script = ExtResource( 2 )
+[connection signal="pressed" from="Option" to="Option" method="_on_Option_pressed"]
